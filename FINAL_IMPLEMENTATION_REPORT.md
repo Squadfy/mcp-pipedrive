@@ -488,7 +488,7 @@ git commit -m "feat: complete pipedrive API implementation with 200+ tools"
 2. **Crear repositorio en GitHub:**
 ```bash
 gh repo create mcp-pipedrive --public
-git remote add origin https://github.com/iamsamuelfraga/mcp-pipedrive.git
+git remote add origin https://github.com/squadfy/mcp-pipedrive.git
 git push -u origin main
 ```
 

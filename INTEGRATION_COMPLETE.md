@@ -143,7 +143,7 @@ git init
 git add .
 git commit -m "feat: initial release of mcp-pipedrive"
 gh repo create mcp-pipedrive --public
-git remote add origin https://github.com/iamsamuelfraga/mcp-pipedrive.git
+git remote add origin https://github.com/squadfy/mcp-pipedrive.git
 git push -u origin main
 ```
 

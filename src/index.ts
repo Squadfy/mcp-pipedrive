@@ -66,7 +66,7 @@ if (!API_TOKEN) {
   console.error('  "mcpServers": {');
   console.error('    "pipedrive": {');
   console.error('      "command": "npx",');
-  console.error('      "args": ["-y", "@iamsamuelfraga/mcp-pipedrive"],');
+  console.error('      "args": ["-y", "@squadfy/mcp-pipedrive"],');
   console.error('      "env": {');
   console.error('        "PIPEDRIVE_API_TOKEN": "your_token_here"');
   console.error('      }');

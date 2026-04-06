@@ -104,7 +104,7 @@ npm ERR! syscall access
 ```json
 {
   "command": "npx",
-  "args": ["-y", "@iamsamuelfraga/mcp-pipedrive"]
+  "args": ["-y", "@squadfy/mcp-pipedrive"]
 }
 ```
 
@@ -118,7 +118,7 @@ sudo chown -R $USER /usr/local/lib/node_modules
 ```bash
 npm config set prefix ~/.npm-global
 export PATH=~/.npm-global/bin:$PATH
-npm install -g @iamsamuelfraga/mcp-pipedrive
+npm install -g @squadfy/mcp-pipedrive
 ```
 
 ### Wrong Node Version
@@ -143,7 +143,7 @@ Expected version ">=18". Got "16.x.x"
 
 **Error:**
 ```
-Cannot find module '@iamsamuelfraga/mcp-pipedrive'
+Cannot find module '@squadfy/mcp-pipedrive'
 ```
 
 **Solution:**
@@ -155,15 +155,15 @@ Cannot find module '@iamsamuelfraga/mcp-pipedrive'
 
 2. Reinstall:
    ```bash
-   npm uninstall -g @iamsamuelfraga/mcp-pipedrive
-   npm install -g @iamsamuelfraga/mcp-pipedrive
+   npm uninstall -g @squadfy/mcp-pipedrive
+   npm install -g @squadfy/mcp-pipedrive
    ```
 
 3. Or use npx (no installation needed):
    ```json
    {
      "command": "npx",
-     "args": ["-y", "@iamsamuelfraga/mcp-pipedrive"]
+     "args": ["-y", "@squadfy/mcp-pipedrive"]
    }
    ```
 
@@ -210,7 +210,7 @@ Ensure `env` block is present in config:
   "mcpServers": {
     "pipedrive": {
       "command": "npx",
-      "args": ["-y", "@iamsamuelfraga/mcp-pipedrive"],
+      "args": ["-y", "@squadfy/mcp-pipedrive"],
       "env": {
         "PIPEDRIVE_API_TOKEN": "your_token_here"
       }
@@ -824,7 +824,7 @@ When reporting issues, include:
    ```bash
    node --version
    npm --version
-   npx @iamsamuelfraga/mcp-pipedrive --version
+   npx @squadfy/mcp-pipedrive --version
    ```
 
 ### Where to Get Help
@@ -835,11 +835,11 @@ When reporting issues, include:
    - [CUSTOM_FIELDS.md](./CUSTOM_FIELDS.md)
 
 2. **GitHub Issues:**
-   - Search existing: https://github.com/iamsamuelfraga/mcp-pipedrive/issues
+   - Search existing: https://github.com/squadfy/mcp-pipedrive/issues
    - Create new issue with debug info
 
 3. **GitHub Discussions:**
-   - Q&A: https://github.com/iamsamuelfraga/mcp-pipedrive/discussions
+   - Q&A: https://github.com/squadfy/mcp-pipedrive/discussions
 
 4. **Pipedrive Support:**
    - For Pipedrive API issues

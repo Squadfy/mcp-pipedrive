@@ -252,7 +252,7 @@ Total: **81 KB de documentación profesional**
 2. **Crear repositorio en GitHub**
    ```bash
    gh repo create mcp-pipedrive --public
-   git remote add origin https://github.com/iamsamuelfraga/mcp-pipedrive.git
+   git remote add origin https://github.com/squadfy/mcp-pipedrive.git
    git push -u origin main
    ```
 
