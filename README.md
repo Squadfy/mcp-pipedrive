@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node Version](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
 
-> The most complete and robust Pipedrive MCP implementation for Claude
+> The most complete and robust Pipedrive MCP implementation for Claude.
 
 A production-ready [Model Context Protocol](https://modelcontextprotocol.io) server that provides Claude with comprehensive access to the Pipedrive CRM API. This server enables seamless automation of sales workflows, deal management, contact organization, and activity tracking through natural language conversations.
 
