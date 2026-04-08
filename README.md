@@ -1,6 +1,6 @@
 # Pipedrive MCP Server
 
-[![npm version](https://img.shields.io/npm/v/@squadfy/mcp-pipedrive.svg)](https://www.npmjs.com/package/@squadfy/mcp-pipedrive)
+[![GitHub Package](https://img.shields.io/badge/GitHub%20Package-@squadfy%2Fmcp--pipedrive-blue?logo=github)](https://github.com/Squadfy/mcp-pipedrive/packages)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node Version](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
 
@@ -40,16 +40,32 @@ A production-ready [Model Context Protocol](https://modelcontextprotocol.io) ser
 
 ## Installation
 
-### Global Installation
+This package is hosted on the [GitHub Package Registry](https://github.com/Squadfy/mcp-pipedrive/packages) and requires SSH access to the Squadfy GitHub organization.
+
+### Prerequisites
+
+Make sure your SSH key is configured and has access to the Squadfy organization on GitHub. You can verify with:
 
 ```bash
-npm install -g @squadfy/mcp-pipedrive
+ssh -T git@github.com
 ```
 
 ### Using npx (No Installation Required)
 
 ```bash
-npx -y @squadfy/mcp-pipedrive
+npx git+ssh://git@github.com:Squadfy/mcp-pipedrive
+```
+
+### Using a specific version
+
+```bash
+npx git+ssh://git@github.com:Squadfy/mcp-pipedrive#v1.0.0
+```
+
+### Global Installation
+
+```bash
+npm install -g git+ssh://git@github.com:Squadfy/mcp-pipedrive
 ```
 
 ## Configuration
@@ -70,7 +86,7 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json`:
   "mcpServers": {
     "pipedrive": {
       "command": "npx",
-      "args": ["-y", "@squadfy/mcp-pipedrive"],
+      "args": ["-y", "git+ssh://git@github.com:Squadfy/mcp-pipedrive"],
       "env": {
         "PIPEDRIVE_API_TOKEN": "your_api_token_here"
       }
@@ -88,7 +104,7 @@ Edit `%APPDATA%\Claude\claude_desktop_config.json`:
   "mcpServers": {
     "pipedrive": {
       "command": "npx",
-      "args": ["-y", "@squadfy/mcp-pipedrive"],
+      "args": ["-y", "git+ssh://git@github.com:Squadfy/mcp-pipedrive"],
       "env": {
         "PIPEDRIVE_API_TOKEN": "your_api_token_here"
       }
@@ -117,7 +133,7 @@ Perfect for exploratory use or when you want to prevent accidental modifications
   "mcpServers": {
     "pipedrive": {
       "command": "npx",
-      "args": ["-y", "@squadfy/mcp-pipedrive"],
+      "args": ["-y", "git+ssh://git@github.com:Squadfy/mcp-pipedrive"],
       "env": {
         "PIPEDRIVE_API_TOKEN": "your_token",
         "PIPEDRIVE_READ_ONLY": "true"
@@ -136,7 +152,7 @@ Only enable specific tool categories:
   "mcpServers": {
     "pipedrive": {
       "command": "npx",
-      "args": ["-y", "@squadfy/mcp-pipedrive"],
+      "args": ["-y", "git+ssh://git@github.com:Squadfy/mcp-pipedrive"],
       "env": {
         "PIPEDRIVE_API_TOKEN": "your_token",
         "PIPEDRIVE_TOOLSETS": "deals,persons,search"
@@ -155,7 +171,7 @@ Enable verbose logging for troubleshooting:
   "mcpServers": {
     "pipedrive": {
       "command": "npx",
-      "args": ["-y", "@squadfy/mcp-pipedrive"],
+      "args": ["-y", "git+ssh://git@github.com:Squadfy/mcp-pipedrive"],
       "env": {
         "PIPEDRIVE_API_TOKEN": "your_token",
         "LOG_LEVEL": "debug"
