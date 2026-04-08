@@ -27,7 +27,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\"",
     "type-check": "tsc --noEmit",
-    "prepare": "husky",
+    "prepare": "npm run build && husky || true",
     "clean": "rm -rf dist"
   },
   "keywords": [
